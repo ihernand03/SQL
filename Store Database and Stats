@@ -1,0 +1,18 @@
+CREATE TABLE clothing_store (id INTEGER PRIMARY KEY, item TEXT, price INTEGER, inventory INTEGER, quantity_sold INTEGER, rating integer);
+INSERT INTO clothing_store VALUES
+(1, "blue_shirt", 5, 20, 6, 85),
+(2, "green_shirt", 5, 15, 10, 73),
+(3, "red_shirt", 5, 10, 4, 60),
+(4, "jeans", 25, 30, 11, 98),
+(5, "dress_pants", 45, 20, 3, 88),
+(6, "long_dress", 35, 60, 27, 67),
+(7, "earrings", 50, 25, 18, 82),
+(8, "dress_shoes", 65, 40, 22, 86),
+(10, "sandals", 33, 18, 17, 62),
+(11, "heels", 55, 36, 13, 81),
+(12, "belts", 15, 30, 25, 91),
+(13, "hats", 9, 70, 3, 88),
+(14, "hoodies", 32, 90, 73, 99),
+(15, "watches", 150, 40, 1, 27);
+
+SELECT * FROM clothing_store where quantity_sold > 20 order by price
